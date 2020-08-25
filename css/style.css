@@ -138,12 +138,13 @@ background-color: white
 }
 
 
-.menu:hover{
-  background-color: #e7305b;
+li .menu:hover{
+  /* background-color: #e7305b; */
   padding: 5px;
   border-radius: 5%;
   color:white;
   visibility: visible;
+
 }
 
 
