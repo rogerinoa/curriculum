@@ -8,13 +8,14 @@ const profile = document.querySelector(".proButton")
 
 //////////// contentSelectors////////////
 
-const add= document.querySelector('.direcccion')
+
 
 const esto = document.querySelector('.under')
 const under1= document.querySelector('.under1')
 const under2= document.querySelector('.under2')
 const email= document.querySelector('.email')
 const contacto= document.querySelector('.contacto')
+const add= document.querySelector('.direcccion')
 
 const proDesc = document.querySelector(".profile2")
 const proDesc2 = document.querySelector(".profile3")
@@ -60,8 +61,11 @@ for(let i of coma){
     const current= e.currentTarget.getAttribute('data-tag')
     console.log(current)
     if(current=='direccion'){
-      i.classList.toggle('email-active')
-      under2.classList.toggle('under-active')
+      i.currentTarget.addEventListener('mouseover',()=>{
+        under.sytle.visibility='visible'
+      })
+      // i.classList.toggle('email-active')
+      // under2.classList.toggle('under-active')
 
 
     }else if(current=='email'){

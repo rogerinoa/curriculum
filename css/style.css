@@ -117,14 +117,13 @@ background-color: white
 /* ////////submenus/////// */
 .upper, .upper1, .under2{
   position:static;
-
+  z-index: 999;
 }
 .under, .under1, .under2{
   font-size: 25px;
   position: absolute;
   visibility: hidden;
   /* display: none; */
-
   color:white;
   background-color: #e7305b;
   z-index: 9,
@@ -133,19 +132,18 @@ background-color: white
   padding: 30px;
   visibility: visible;
 
-
 }
 .email-active{
   background-color: #e7305b
 }
 
 
-
 .menu:hover{
   background-color: #e7305b;
   padding: 5px;
   border-radius: 5%;
-  color:white
+  color:white;
+  visibility: visible;
 }
 
 
